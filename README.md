@@ -71,4 +71,4 @@ If you use this code, please cite <a href="https://jcgt.org/published/0011/02/08
 ```
 
 ## Disclaimer
-I implemented this work during my stays at the Czech Technical University and the University of Tokyo before I joined AMD.
+I implemented this work during my stays at the Czech Technical University and the University of Tokyo (before I joined AMD).
