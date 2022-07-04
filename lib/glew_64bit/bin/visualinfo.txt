@@ -1,0 +1,81 @@
+OpenGL vendor string: Intel
+OpenGL renderer string: Mobile Intel(R) HD Graphics
+OpenGL version string: 3.0.0 - Build 8.15.10.2291
+OpenGL extensions (GL_): 
+    GL_EXT_blend_minmax, GL_EXT_blend_subtract, GL_EXT_blend_color, GL_EXT_abgr,
+    GL_EXT_texture3D, GL_EXT_clip_volume_hint, GL_EXT_compiled_vertex_array,
+    GL_SGIS_texture_edge_clamp, GL_SGIS_generate_mipmap,
+    GL_EXT_draw_range_elements, GL_SGIS_texture_lod, GL_EXT_rescale_normal,
+    GL_EXT_packed_pixels, GL_EXT_texture_edge_clamp,
+    GL_EXT_separate_specular_color, GL_ARB_multitexture,
+    GL_EXT_texture_env_combine, GL_EXT_bgra, GL_EXT_blend_func_separate,
+    GL_EXT_secondary_color, GL_EXT_fog_coord, GL_EXT_texture_env_add,
+    GL_ARB_texture_cube_map, GL_ARB_transpose_matrix, GL_ARB_texture_env_add,
+    GL_IBM_texture_mirrored_repeat, GL_EXT_multi_draw_arrays,
+    GL_NV_blend_square, GL_ARB_texture_compression,
+    GL_3DFX_texture_compression_FXT1, GL_EXT_texture_filter_anisotropic,
+    GL_ARB_texture_border_clamp, GL_ARB_point_parameters,
+    GL_ARB_texture_env_combine, GL_ARB_texture_env_dot3,
+    GL_ARB_texture_env_crossbar, GL_EXT_texture_compression_s3tc, GL_ARB_shadow,
+    GL_ARB_window_pos, GL_EXT_shadow_funcs, GL_EXT_stencil_wrap,
+    GL_ARB_vertex_program, GL_EXT_texture_rectangle, GL_ARB_fragment_program,
+    GL_EXT_stencil_two_side, GL_ATI_separate_stencil,
+    GL_ARB_vertex_buffer_object, GL_EXT_texture_lod_bias,
+    GL_ARB_occlusion_query, GL_ARB_fragment_shader, GL_ARB_shader_objects,
+    GL_ARB_shading_language_100, GL_ARB_texture_non_power_of_two,
+    GL_ARB_vertex_shader, GL_NV_texgen_reflection, GL_ARB_point_sprite,
+    GL_EXT_blend_equation_separate, GL_ARB_depth_texture,
+    GL_ARB_texture_rectangle, GL_ARB_draw_buffers, GL_ARB_color_buffer_float,
+    GL_ARB_half_float_pixel, GL_ARB_texture_float, GL_ARB_pixel_buffer_object,
+    GL_EXT_framebuffer_object, GL_ARB_draw_instanced, GL_ARB_half_float_vertex,
+    GL_EXT_draw_buffers2, GL_WIN_swap_hint, GL_EXT_texture_sRGB,
+    GL_ARB_multisample, GL_EXT_packed_float, GL_EXT_texture_shared_exponent,
+    GL_ARB_texture_rg, GL_ARB_texture_compression_rgtc,
+    GL_NV_conditional_render, GL_EXT_texture_swizzle, GL_ARB_framebuffer_sRGB,
+    GL_EXT_packed_depth_stencil, GL_ARB_depth_buffer_float,
+    GL_EXT_transform_feedback, GL_EXT_framebuffer_blit,
+    GL_EXT_framebuffer_multisample, GL_ARB_framebuffer_object,
+    GL_EXT_texture_array, GL_EXT_texture_integer, GL_ARB_map_buffer_range,
+    GL_EXT_texture_snorm, GL_INTEL_performance_queries,
+    GL_ARB_vertex_array_object.
+GLU version string: 1.2.2.0 Microsoft Corporation
+GLU extensions (GLU_): 
+    GL_EXT_bgra.
+WGL extensions (WGL_): 
+    WGL_EXT_depth_float, WGL_ARB_buffer_region, WGL_ARB_extensions_string,
+    WGL_ARB_make_current_read, WGL_ARB_pixel_format, WGL_ARB_pbuffer,
+    WGL_EXT_extensions_string, WGL_EXT_swap_control, WGL_ARB_multisample,
+    WGL_ARB_pixel_format_float, WGL_ARB_framebuffer_sRGB,
+    WGL_ARB_create_context, WGL_EXT_pixel_format_packed_float.
+ +-----+-------------------------+-----------------+----------+-----------------+----------+
+ |     |          visual         |      color      | ax dp st |      accum      |   layer  |
+ |  id | tp ac gd fm db sw st ms |  sz  r  g  b  a | bf th cl |  sz  r  g  b  a | ov un sw |
+ +-----+-------------------------+-----------------+----------+-----------------+----------+
+ |   1 | wp fu  .  i  .  .  .  . |  32  8  8  8  8 |  .  .  . |   .  .  .  .  . |  .  .  . |
+ |   2 | wp fu  .  i  y  .  .  . |  32  8  8  8  8 |  .  .  . |  64 16 16 16 16 |  .  .  . |
+ |   3 | wp fu  .  i  .  .  .  . |  32  8  8  8  8 |  . 24  8 |   .  .  .  .  . |  .  .  . |
+ |   4 | wp fu  .  i  y  .  .  . |  32  8  8  8  8 |  . 24  8 |  64 16 16 16 16 |  .  .  . |
+ |   5 | wp fu  .  i  .  .  .  . |  32  8  8  8  8 |  . 16  . |   .  .  .  .  . |  .  .  . |
+ |   6 | wp fu  .  i  y  .  .  . |  32  8  8  8  8 |  . 16  . |  64 16 16 16 16 |  .  .  . |
+ |   7 | wp fu  .  i  y  c  .  . |  32  8  8  8  8 |  .  .  . |  64 16 16 16 16 |  .  .  . |
+ |   8 | wp fu  .  i  y  c  .  . |  32  8  8  8  8 |  . 16  . |  64 16 16 16 16 |  .  .  . |
+ |   9 | wp fu  .  i  y  c  .  . |  32  8  8  8  8 |  . 24  8 |  64 16 16 16 16 |  .  .  . |
+ |  10 | wp fu  .  i  .  .  .  4 |  32  8  8  8  8 |  .  .  . |   .  .  .  .  . |  .  .  . |
+ |  11 | wp fu  .  i  y  .  .  4 |  32  8  8  8  8 |  .  .  . |  64 16 16 16 16 |  .  .  . |
+ |  12 | wp fu  .  i  .  .  .  4 |  32  8  8  8  8 |  . 16  . |   .  .  .  .  . |  .  .  . |
+ |  13 | wp fu  .  i  y  .  .  4 |  32  8  8  8  8 |  . 16  . |  64 16 16 16 16 |  .  .  . |
+ |  14 | wp fu  .  i  .  .  .  4 |  32  8  8  8  8 |  . 24  8 |   .  .  .  .  . |  .  .  . |
+ |  15 | wp fu  .  i  y  .  .  4 |  32  8  8  8  8 |  . 24  8 |  64 16 16 16 16 |  .  .  . |
+ |  52 | pb fu  .  ?  .  .  .  . | 128 32 32 32 32 |  .  .  . |   .  .  .  .  . |  .  .  . |
+ |  53 | pb fu  .  ?  .  .  .  . | 128 32 32 32 32 |  . 16  . |   .  .  .  .  . |  .  .  . |
+ |  54 | pb fu  .  ?  .  .  .  . | 128 32 32 32 32 |  . 24  8 |   .  .  .  .  . |  .  .  . |
+ |  55 | pb fu  .  ?  .  .  .  . |  64 16 16 16 16 |  .  .  . |   .  .  .  .  . |  .  .  . |
+ |  56 | pb fu  .  ?  .  .  .  . |  64 16 16 16 16 |  . 16  . |   .  .  .  .  . |  .  .  . |
+ |  57 | pb fu  .  ?  .  .  .  . |  64 16 16 16 16 |  . 24  8 |   .  .  .  .  . |  .  .  . |
+ |  58 | pb fu  .  p  .  .  .  . |  32 11 11 10  . |  .  .  . |   .  .  .  .  . |  .  .  . |
+ |  59 | pb fu  .  p  .  .  .  . |  32 11 11 10  . |  . 16  . |   .  .  .  .  . |  .  .  . |
+ |  60 | pb fu  .  p  .  .  .  . |  32 11 11 10  . |  . 24  8 |   .  .  .  .  . |  .  .  . |
+ +-----+-------------------------+-----------------+----------+-----------------+----------+
+ |     |          visual         |      color      | ax dp st |      accum      |   layer  |
+ |  id | tp ac gd fm db sw st ms |  sz  r  g  b  a | bf th cl |  sz  r  g  b  a | ov un sw |
+ +-----+-------------------------+-----------------+----------+-----------------+----------+
