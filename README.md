@@ -64,11 +64,11 @@ If you use this code, please cite <a href="https://jcgt.org/published/0011/02/08
   title = {{Performance Comparison of Bounding Volume Hierarchies for GPU Ray Tracing}},
   journal = {Journal of Computer Graphics Techniques},
   volume = {11},
-  number = {2},
-  pages = {143--161},
+  number = {4},
+  pages = {1--19},
   year = {2022},
 }
 ```
 
 ## Disclaimer
-I implemented this work during my stays at the Czech Technical University and the University of Tokyo before I joined AMD.
+I implemented this work during my stays at the Czech Technical University and the University of Tokyo (before I joined AMD).
