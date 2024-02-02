@@ -295,6 +295,9 @@ extern "C" GLOBAL void refit(
             // Go to the parent.
             nodeIndex = nodeParentIndices[nodeIndex];
 
+            // Ensure atomics execution order.
+            __threadfence();
+
         }
 
     }

@@ -106,9 +106,6 @@ float InsertionBuilder::optimizeInsertion(HipBVH & bvh, int numberOfReferences, 
         // Previous cost.
         prevCost = cost;
 
-        // Clear termination counters.
-        bvh.termCounters.clear();
-
         // Find the best node.
         findBestNodeKernel.setParams(
             numberOfNodes,
