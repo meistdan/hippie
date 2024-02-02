@@ -187,6 +187,7 @@ extern "C" GLOBAL void findBestNode(
 
 extern "C" GLOBAL void lockNodes(
     const int numberOfNodes,
+    const int numberOfReferences,
     const int mod,
     const int remainder,
     int * nodeParentIndices,
@@ -239,7 +240,7 @@ extern "C" GLOBAL void lockNodes(
             }
 
             // Parent is root => lock sibling's children.
-            else if (inNodeSiblingIndex < numberOfNodes - 1) {
+            else if (inNodeSiblingIndex < numberOfReferences - 1) {
                 int inNodeSiblingLeftIndex = nodeLeftIndices[inNodeSiblingIndex];
                 int inNodeSiblingRightIndex = nodeRightIndices[inNodeSiblingIndex];
                 atomicMax(&locks[inNodeSiblingLeftIndex], lock);
@@ -270,6 +271,7 @@ extern "C" GLOBAL void lockNodes(
 
 extern "C" GLOBAL void checkLocks(
     const int numberOfNodes,
+    const int numberOfReferences,
     const int mod,
     const int remainder,
     int * nodeParentIndices,
@@ -324,8 +326,9 @@ extern "C" GLOBAL void checkLocks(
                 int inNodeParentParentIndex = nodeParentIndices[inNodeParentIndex];
                 if (locks[inNodeParentParentIndex] != lock) bestOutNodeIndex = -1;
             }
+
             // Parent is root => check sibling's children.
-            else if (inNodeSiblingIndex < numberOfNodes - 1) {
+            else if (inNodeSiblingIndex < numberOfReferences - 1) {
                 int inNodeSiblingLeftIndex = nodeLeftIndices[inNodeSiblingIndex];
                 int inNodeSiblingRightIndex = nodeRightIndices[inNodeSiblingIndex];
                 if (locks[inNodeSiblingLeftIndex] != lock) bestOutNodeIndex = -1;

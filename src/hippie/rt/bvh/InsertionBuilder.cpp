@@ -129,6 +129,7 @@ float InsertionBuilder::optimizeInsertion(HipBVH & bvh, int numberOfReferences, 
         // Lock nodes on paths.
         lockNodesKernel.setParams(
             numberOfNodes,
+            numberOfReferences,
             modCur,
             steps % modCur,
             nodeParentIndices,
@@ -147,6 +148,7 @@ float InsertionBuilder::optimizeInsertion(HipBVH & bvh, int numberOfReferences, 
         // Check locks.
         checkLocksKernel.setParams(
             numberOfNodes,
+            numberOfReferences,
             modCur,
             steps % modCur,
             nodeParentIndices,

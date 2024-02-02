@@ -37,6 +37,7 @@ extern "C" {
 
     GLOBAL void lockNodes(
         const int numberOfNodes,
+        const int numberOfReferences,
         const int mod,
         const int remainder,
         int * nodeParentIndices,
@@ -49,6 +50,7 @@ extern "C" {
 
     GLOBAL void checkLocks(
         const int numberOfNodes,
+        const int numberOfReferences,
         const int mod,
         const int remainder,
         int * nodeParentIndices,
