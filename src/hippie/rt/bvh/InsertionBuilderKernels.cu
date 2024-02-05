@@ -255,6 +255,7 @@ extern "C" GLOBAL void lockNodes(
                 int outNodeParentIndex = nodeParentIndices[outNodeIndex];
                 atomicMax(&locks[outNodeParentIndex], lock);
             }
+
             // Parent is root => lock root's children.
             else {
                 int outNodeLeftIndex = nodeLeftIndices[outNodeIndex];
@@ -342,6 +343,14 @@ extern "C" GLOBAL void checkLocks(
             if (outNodeIndex > 0) {
                 int outNodeParentIndex = nodeParentIndices[outNodeIndex];
                 if (locks[outNodeParentIndex] != lock) bestOutNodeIndex = -1;
+            }
+
+            // Parent is root => lock root's children.
+            else {
+                int outNodeLeftIndex = nodeLeftIndices[outNodeIndex];
+                int outNodeRightIndex = nodeRightIndices[outNodeIndex];
+                if (locks[outNodeLeftIndex] != lock) bestOutNodeIndex = -1;
+                if (locks[outNodeRightIndex] != lock) bestOutNodeIndex = -1;
             }
 
             // Out node index.
